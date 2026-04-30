@@ -1,0 +1,37 @@
+.game-area {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 2px solid #333;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+}
+
+.obstacle {
+  /* position, left, top, width, and height are handled via inline styles */
+}
+
+.obstacle-normal {
+  background-color: red;
+  border-radius: 4px;
+}
+
+.obstacle-bonus {
+  background-color: purple;
+  border-radius: 8px;
+  /* 3D visual effect */
+  transform: perspective(200px) rotateX(10deg) rotateY(-5deg);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8), 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.score-container {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  font-family: sans-serif;
+  z-index: 10;
+}
